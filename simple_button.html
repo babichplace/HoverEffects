@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple button animation</title>
+
+<style>
+
+
+
+body
+{
+  background-color: #070F2B;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  height: 100vh;
+  width: 100vw;
+}
+  
+.simpleButton {
+  border: 2px solid currentColor;
+  border-radius: 1rem;
+  color: #FFD0EC;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+
+.simpleButton::after {
+  background-color: #FFD0EC;
+  border-radius: 1rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: .2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.simpleButton:hover::after {
+  transform: translate(0, 0);
+}
+
+.simpleButton:hover {
+  border: 2px solid transparent;
+  color: indigo;
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<a href="#" class="simpleButton">Hover me</a>
+
+
+
+</body>
+</html>
