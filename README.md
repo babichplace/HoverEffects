@@ -3,6 +3,10 @@ Collection of mouse hover effects for buttons
 
 ## Collection
 
+[Ordinary hover effect](/ordinary_button_hover.html)
+
+![ordinary button effect](/assets/images/ordinary_button.gif)
+
 [Reveal icon on hover](/button_icon_hover.html)
 
 ![icon button hover effect](/assets/images/button_icon_hover.gif)
