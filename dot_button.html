@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dot button animation</title>
+
+<style>
+
+
+body
+{
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  height: 100vh;
+  width: 100vw;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dotbutton {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all .2s ease;
+}
+
+.dotbutton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: #FFD0EC;
+  width: 56px;
+  height: 56px;
+  transition: all .3s ease;
+}
+
+.dotbutton span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.dotbutton svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all .3s ease;
+}
+
+.dotbutton:hover:before {
+  width: 100%;
+  background: #FFD0EC;
+}
+
+.v:hover svg {
+  transform: translateX(0);
+}
+
+.dotbutton:active {
+  transform: scale(.96);
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<a href="#" class="dotbutton">
+  <span>Hover me</span>
+  <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</a>
+
+
+
+</body>
+</html>
