@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text with underline hover effect</title>
+
+<style>
+
+
+body
+{
+  background-color: #7F27FF;
+  font-family:'Red Hat Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+h1 {
+  font-size: 5vw;
+  max-width: 75vw;
+  color: #fefefe;
+}
+
+h1 span {
+  background-image: linear-gradient( transparent, #d2b3ff);
+  background-size: 0;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+
+h1:hover span {
+  background-size: 100%;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<h1>
+  <span>Hover me</span>
+</h1>
+
+</body>
+</html>

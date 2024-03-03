@@ -15,6 +15,10 @@ Collection of mouse hover effects for buttons
 
 ![Fancy button hover effect](/assets/images/simple_button.gif)
 
+[Text effect on hover](/hover_text.html)
+
+![text effect on hover](/assets/images/text_hover.gif)
+
 [Glow effect on hover](/button_glow.html)
 
 ![glow hover effect on hover](/assets/images/glow_button.gif)
